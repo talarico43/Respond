@@ -82,7 +82,7 @@
 		resizeThrottle = 30,
 		base = doc.getElementsByTagName( "base" )[0],
 		links = doc.getElementsByTagName( "link" ),
-		head = links[0].parentNode,
+		head = head = links[ links.length-1 ].parentNode,
 
 		lastCall,
 		resizeDefer,
